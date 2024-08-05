@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.playlistController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.7999999999999545" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="580.0" prefWidth="257.0" style="-fx-background-color: #080708;" styleClass="colour" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" layoutX="5.0" layoutY="39.0" prefHeight="50.0" prefWidth="274.0" style="-fx-border-radius: 25;" text="Create Playlist" textFill="#fa2c2c">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                        <AnchorPane layoutX="-32.0" layoutY="30.0" onMouseClicked="#createpl2" prefHeight="46.0" prefWidth="226.0" styleClass="colour" />
+                     </children></AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane onMouseClicked="#s_done" prefHeight="577.0" prefWidth="692.0" style="-fx-background-color: #3772f;" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="1.0" layoutY="157.0" onMouseClicked="#s_done" prefHeight="423.0" prefWidth="686.0" style="-fx-background-color: #25263A;">
+                           <children>
+                              <TextField fx:id="searchsong11" layoutX="137.0" layoutY="121.0" prefHeight="42.0" prefWidth="387.0" promptText="searched_song" />
+                              <Button fx:id="donebtn" layoutX="251.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#s_done1" prefHeight="38.0" prefWidth="103.0" style="-fx-background-radius: 25;" text="Done" />
+                              <RadioButton fx:id="rbtn1" layoutX="99.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#rbtnclk" />
+                              <TextField fx:id="searchbar11" layoutX="199.0" layoutY="58.0" onAction="#search2" prefHeight="34.0" prefWidth="208.0" promptText="search" />
+                              <Button layoutX="438.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#search34" style="-fx-background-radius: 25;" text="search" />
+                              <Label layoutX="25.0" layoutY="59.0" prefHeight="32.0" prefWidth="158.0" text="Search Song" textFill="#fffcfc">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                        <TextField fx:id="plname1" layoutX="220.0" layoutY="83.0" onAction="#enterplname" prefHeight="34.0" prefWidth="208.0" promptText="Enter playlist name.." />
+                        <Label layoutX="14.0" layoutY="74.0" prefHeight="53.0" prefWidth="230.0" text="Enter the playlist name">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
